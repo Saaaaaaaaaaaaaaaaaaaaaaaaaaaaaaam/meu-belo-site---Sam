@@ -9,7 +9,7 @@
     <title>Inscrever-se</title> 
 </head> 
 <body> 
-<div class="ml-auto mr-auto col-5 col-lg-2">
+<div class="container-fluid">
 <header>
 	<p>
 	<button type="button" class="btn btn-outline-info"><a href="index.html">Voltar</a></button> para a pagina principal
@@ -19,34 +19,31 @@
 	<p>
 	Por favor preencha com seus dados:
 	</p>
-<form action="/login.php" method="post">
-<div class="col-8">
+<form action="/login.php" method="post" class="col-12 col-lg-6 ml-auto mr-auto">
 	<legend>Inscrever-se:</legend>
-</div>
-<fieldset>
-	<div class="col-md-12 col-10">
+	<div class="form-group">
 		<label for="inlineFormInput">Nome:</label>
-			<input type="text" class="form-control mb-2" id="" placeholder="Nome">
+			<input type="text" class="form-control col-lg-10" id="" placeholder="Nome">
 	</div>
-	<div class="col-md-12 col-10">
+	<div class="form-group">
 		<label for="inlineFormInput">Sobrenome:</label>
-			<input type="text" class="form-control mb-2" id="" placeholder="Sobrenome">
+			<input type="text" class="form-control col-lg-10" id="" placeholder="Sobrenome">
 	</div>
-	<div class="col-md-12 col-10">
+	<div class="form-group">
 		<label for="exampleInputEmail1">Endereço de email:</label>
-			<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
-    <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+			<input type="email" class="form-control col-lg-10" id="exampleInputEmail1"  placeholder="Seu email">
+    <small id="emailHelp" class="form-text col-lg-10 text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
 	</div>
-	<div class="col-md-12 col-10">
+	<div class="form-group">
 		<label for="inputPassword6">Senha:</label>
-			<input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" placeholder="Senha">
+			<input type="password" id="inputPassword6" class="form-control  col-lg-10" placeholder="Senha">
     <small id="passwordHelpInline" class="text-muted">
       Deve ter entre 8 e 20 caracteres.
     </small>
 	</div>
-	<div class="col-md-12 col-10">
+	<div class="form-group">
 		<label for="inputPassword6">Confirmar senha:</label>
-			<input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" placeholder="Confirmar senha">
+			<input type="password" id="inputPassword6" class="form-control col-lg-10" placeholder="Confirmar senha">
 	</div>
 	<div class="form-check">
 			<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -60,10 +57,7 @@
 		Aceito os termos de uso.
 		</label>
 	</div>
-
 	<button type="submit" class="btn btn-primary col-md-12 col-10">Enviar</button>
-</fieldset>
 </form>
-</div>
 </body>
 </html>
